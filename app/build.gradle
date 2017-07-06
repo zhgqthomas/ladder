@@ -17,26 +17,26 @@ android {
             aidl.srcDirs = ['src/main/aidl']
         }
     }
-    signingConfigs {
-
-        release {
-            storeFile file("${ReleaseKeyLocation}")
-            keyAlias "${ReleaseKeyAlias}"
-            storePassword "${ReleaseStorePassword}"
-            keyPassword "${ReleasePassword}"
-        }
-
-        debug {
-            storeFile file("${DebugKeyLocation}")
-            keyAlias "${DebugKeyAlias}"
-            storePassword "${DebugStorePassword}"
-            keyPassword "${DebugKeyPassword}"
-        }
-
-    }
+//    signingConfigs {
+//
+//        release {
+//            storeFile file("${ReleaseKeyLocation}")
+//            keyAlias "${ReleaseKeyAlias}"
+//            storePassword "${ReleaseStorePassword}"
+//            keyPassword "${ReleasePassword}"
+//        }
+//
+//        debug {
+//            storeFile file("${DebugKeyLocation}")
+//            keyAlias "${DebugKeyAlias}"
+//            storePassword "${DebugStorePassword}"
+//            keyPassword "${DebugKeyPassword}"
+//        }
+//
+//    }
     buildTypes {
         release {
-            signingConfig signingConfigs.release
+//            signingConfig signingConfigs.release
 
             minifyEnabled true
             shrinkResources true
